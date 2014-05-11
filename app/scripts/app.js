@@ -16,6 +16,10 @@ angular.module('landingPageApp', [
                 templateUrl: 'views/home.html',
                 controller: 'HomeCtrl'
             })
+            .when('/about', {
+                templateUrl: 'views/about.html',
+                controller: 'AboutCtrl'
+            })
             .otherwise({
                 redirectTo: '/home'
             });

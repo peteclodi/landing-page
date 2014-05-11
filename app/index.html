@@ -25,11 +25,11 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-        <div ng-controller="NavBarCtrl">
-            <div ng-include="'views/nav-bar.html'"></div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div ng-controller="NavBarCtrl" ng-include="'views/nav-bar.html'"></div>
+            <div class="main" ng-view></div>
         </div>
-        <div class="col-md-offset-2 main" ng-view></div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -62,9 +62,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/nav-bar.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/home.js"></script>
-        <script src="scripts/controllers/nav-bar.js"></script>
+        <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->
 </body>
 </html>
