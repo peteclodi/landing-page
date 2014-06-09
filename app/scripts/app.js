@@ -20,6 +20,11 @@ angular.module('landingPageApp', [
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
             })
+            .when('/code', {
+                templateUrl: 'views/code.html',
+                controller: 'CodeCtrl'
+            })
+
             .otherwise({
                 redirectTo: '/home'
             });
