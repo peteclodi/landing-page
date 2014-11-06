@@ -22,11 +22,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="col-md-3 nav-sidebar navbar-inverse" ng-include="'views/nav-bar.html'"></div>
-            <div class="col-md-9 main" ng-view></div>
-        </div>
+    <div class="nav-sidebar navbar-inverse" ng-include="'views/nav-bar.html'"></div>
+    <div class="container">
+        <div class="main" ng-view></div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

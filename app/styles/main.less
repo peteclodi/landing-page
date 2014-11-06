@@ -2,70 +2,69 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.nav-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16.67%;
+    height: 100%;
+    padding-left: 10px;
+
+    nav {
+        height: 90%;
+    }
+
+    .nav-footer {
+        font-size: 12px;
+        height: 7.5%;
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.container {
+    margin-left: 16.67%;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.main {
+    .panel {
+        max-width: 85%;
+
+        .sears-ready-for-pickup {
+            width: 50%;
+        }
+    }
+}
+
+img.range-slider {
+    width: 100%;
 }
 
 /* Customize container */
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+    .container {
+        width: 768px - (768 * 0.1667);
+    }
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+/* Customize container */
+@media (min-width: 992px) {
+    .container {
+        width: 992px - (992 * 0.1667);
+    }
 }
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+
+/* Customize container */
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px - (1200 * 0.1667);
+    }
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
