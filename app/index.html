@@ -22,10 +22,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="nav-sidebar navbar-inverse" ng-include="'views/nav-bar.html'"></div>
-    <div class="container">
-        <div class="main" ng-view></div>
-    </div>
+    <div class="header" ng-controller="HeaderCtrl" ng-include="'views/header.html'"></div>
+    <div class="container" ng-view></div>
+    <div class="footer" ng-include="'views/footer.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -52,6 +51,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/header.js"></script>
     <script src="scripts/controllers/nav-bar.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/home.js"></script>
