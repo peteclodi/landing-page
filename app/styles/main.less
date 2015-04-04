@@ -6,31 +6,23 @@ body {
     padding-bottom: 20px;
 }
 
-.nav-sidebar {
-    position: absolute;
+.header {
+    position: fixed;
     top: 0;
     left: 0;
-    width: 16.67%;
-    height: 100%;
-    padding-left: 10px;
-
-    nav {
-        height: 90%;
-    }
-
-    .nav-footer {
-        font-size: 12px;
-        height: 7.5%;
-        display: flex;
-        align-items: flex-end;
-    }
+    width: 100%;
+    height: 10%;
+    overflow-y: hidden;
+    background: #245269;
 }
 
 .container {
-    margin-left: 16.67%;
-}
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
 
-.main {
     .panel {
         max-width: 85%;
 
@@ -40,29 +32,43 @@ body {
     }
 }
 
+.footer {
+    position: fixed;
+    top: 85%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #245269;
+
+    .contact-me-header {
+        color: #31b0d5;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    .footer-glyphicon {
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+}
+
 img.range-slider {
     width: 100%;
 }
 
 /* Customize container */
 @media (min-width: 768px) {
-    .container {
-        width: 768px - (768 * 0.1667);
-    }
 }
 
 /* Customize container */
 @media (min-width: 992px) {
-    .container {
-        width: 992px - (992 * 0.1667);
-    }
 }
 
 /* Customize container */
 @media (min-width: 1200px) {
-    .container {
-        width: 1200px - (1200 * 0.1667);
-    }
 }
 
 /* Responsive: Portrait tablets and up */
