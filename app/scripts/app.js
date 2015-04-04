@@ -5,15 +5,11 @@ angular.module('landingPageApp', [
         'ngSanitize',
         'ngRoute'
     ])
-    .config(function ($routeProvider) {
+    .config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
-            })
-            .when('/home', {
-                templateUrl: 'views/home.html',
-                controller: 'HomeCtrl'
             })
             .when('/about', {
                 templateUrl: 'views/about.html',
@@ -24,6 +20,7 @@ angular.module('landingPageApp', [
                 controller: 'CodeCtrl'
             })
             .otherwise({
-                redirectTo: '/home'
+                redirectTo: '/'
             });
+        $locationProvider.hashPrefix('!').html5Mode(true);
     });
