@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('landingPageApp', [
-        'ngCookies',
         'ngResource',
         'ngSanitize',
         'ngRoute'
@@ -24,7 +23,6 @@ angular.module('landingPageApp', [
                 templateUrl: 'views/code.html',
                 controller: 'CodeCtrl'
             })
-
             .otherwise({
                 redirectTo: '/home'
             });
