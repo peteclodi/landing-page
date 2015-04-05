@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 45px;
+    width: 100%;
+    line-height: 25px;
+    text-align: center;
+    background: #245269;
+
+    .button-bar {
+        display: inline-block;
+        float: left;
+        max-width: 1260px;
+
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+        li {
+            float: left;
+            list-style: none;
+            margin-left: 0;
+            a {
+                color: white;
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+                border-radius: 0;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.active{
+                a {
+                    background-color: #337ab7;
+                }
+            }
+        }
+    }
+}

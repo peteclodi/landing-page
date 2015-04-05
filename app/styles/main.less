@@ -1,59 +1,7 @@
 @import 'bootstrap';
-
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    overflow-y: hidden;
-    background: #245269;
-}
-
-.container {
-    position: absolute;
-    top: 10%;
-    width: 100%;
-    height: 80%;
-    overflow-y: scroll;
-
-    .panel {
-        max-width: 85%;
-
-        .sears-ready-for-pickup {
-            width: 50%;
-        }
-    }
-}
-
-.footer {
-    position: fixed;
-    top: 85%;
-    left: 0;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background: #245269;
-
-    .contact-me-header {
-        color: #31b0d5;
-        font-size: 16px;
-        text-decoration: underline;
-    }
-
-    .footer-glyphicon {
-        color: #FFFFFF;
-        font-size: 32px;
-    }
-}
+@import 'header';
+@import 'content';
+@import 'footer';
 
 img.range-slider {
     width: 100%;
