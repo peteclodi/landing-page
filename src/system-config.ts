@@ -2,10 +2,12 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
+// map tells the System loader where to look for things
 const map: any = {
 };
 
 /** User packages configuration. */
+// packages tells the System loader how to load when no filename and/or no extension
 const packages: any = {
 };
 
@@ -29,6 +31,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/header',
   /** @cli-barrel */
 ];
 
