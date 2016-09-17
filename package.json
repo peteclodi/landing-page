@@ -40,5 +40,9 @@
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "2.0.2"
+  },
+  "engines": {
+    "node": "^4.5",
+    "npm": "^3.10"
   }
 }
