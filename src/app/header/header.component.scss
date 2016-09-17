@@ -1,13 +1,12 @@
 :host {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
     background-color: blue;
     color: white;
+    display: flex;
 
-    font-family: 'Droid Sans';
+    flex-direction: row;
     font-size: 16px;
+
+    justify-content: flex-start;
 
     padding: 20px;
 

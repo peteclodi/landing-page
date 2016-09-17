@@ -1,9 +1,11 @@
+import { browser, element, by } from 'protractor/globals';
+
 export class PeteClodiComPage {
   navigateTo() {
     return browser.get('/');
   }
 
   getParagraphText() {
-    return element(by.css('peteclodi-com-app h1')).getText();
+    return element(by.css('app-root h1')).getText();
   }
 }
